@@ -18,13 +18,13 @@ Terraform
 
 # Scripts to perform the application deployment and update:
 
-## .deployment.sh
+## deployment.sh
 
 Used to create the Infrastructure on AWS and return Output DNS and repository URL of ECR.
 
 Command: ./deployment.sh
 
-## .update.sh
+## update.sh
 
 Used to deploy the image of the application on ECR using repository URL of ECR and repository of the application as parameters od script.
 
