@@ -6,7 +6,7 @@ set -e
 
 source_path="$1" # 1st argument from command line
 repository_url="$2" # 2nd argument from command line
-tag=""latest" #docker tag
+tag="latest" #docker tag
 
 # splits string using '.' and picks 4th item
 region="$(echo "$repository_url" | cut -d. -f4)" 
