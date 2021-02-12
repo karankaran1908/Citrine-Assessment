@@ -39,6 +39,7 @@ resource "aws_security_group" "ecs_tasks" {
   }
 }
 
+#aws load balancer
 resource "aws_lb" "lb" {
   name               = "alb"
   subnets = data.aws_subnet_ids.SampleServiceSubnet.ids
@@ -62,6 +63,7 @@ resource "aws_lb_listener" "https_forward" {
   }
 }
 
+#aws target group
 resource "aws_lb_target_group" "alb-target-group" {
   name        = "alb-target-group"
   port        = 80
@@ -143,6 +145,7 @@ resource "aws_ecr_lifecycle_policy" "repo-policy" {
 }
 EOF
 }
+
 data "template_file" "app" {
   template = file("./app.json.tpl")
   vars = {
@@ -165,6 +168,7 @@ resource "aws_ecs_task_definition" "service" {
     Application = "Sample-service"
   }
 }
+
 resource "aws_ecs_service" "app" {
   name            = "app"
   cluster         = aws_ecs_cluster.SampleServiceCluster.id
@@ -192,6 +196,7 @@ resource "aws_ecs_service" "app" {
   }
 }
 
+#aws ecs cluster
 resource "aws_ecs_cluster" "SampleServiceCluster" {
   name = "tf-ecs-cluster"
 }
