@@ -32,7 +32,7 @@ The sample application’s source code can be found here: https://github.com/Cit
   
    For updating the application with new code changes, use repository path of updated application.
 
-## Steps to run
+# Steps to run
 
    - Run ./deployment.sh in the repository that has .tf files
 
