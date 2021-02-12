@@ -12,7 +12,7 @@ Terraform installed and AWS CLI already configured on the machine.
   
 The sample application’s source code can be found here: https://github.com/CitrineInformatics/sample-service
 
-# Technologies Used: 
+# Tool Used: 
 
   Terraform
 
