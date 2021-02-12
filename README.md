@@ -28,7 +28,7 @@ The sample application’s source code can be found here: https://github.com/Cit
 
    Used to deploy the image of the application on ECR using repository URL of ECR and repository of the application as parameters of script.
 
-   Command: ./update.sh <Application repository Path(Required)> <repository URL(Required)> <docker tag(Optional)>
+   Command: ./update.sh <Application repository Path(Required)> <repository URL(Required)>
   
    For updating the application with new code changes, use repository path of updated application.
 
