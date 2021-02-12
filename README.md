@@ -34,11 +34,11 @@ The sample application’s source code can be found here: https://github.com/Cit
 
 ## Steps to run
 
-   -- Run ./deployment.sh in the repository that has .tf files
+   >> Run ./deployment.sh in the repository that has .tf files
 
-   -- Note the outputs i.e. OutputDNS and repositoryURL
+   >> Note the outputs i.e. OutputDNS and repositoryURL
 
-   -- Run ./update.sh with Application repository path(Path where Dockerfile of application is present) and repositoryURL
+   >> Run ./update.sh with Application repository path(Path where Dockerfile of application is present) and repositoryURL
 
-   -- Run OutputDNS in browser to access the application
+   >> Run OutputDNS in browser to access the application
 
