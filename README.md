@@ -28,6 +28,17 @@ Command: ./deployment.sh
 
 Used to deploy the image of the application on ECR using repository URL of ECR and repository of the application as parameters of script.
 
-Command: ./update.sh <<Application repository Path>> <<repository URL>> <docker tag(Optional)>
+Command: ./update.sh <Application repository Path(Required)> <repository URL(Required)> <docker tag(Optional)>
   
 For updating the application with new code changes, use repository path of updated application.
+
+## Steps to run
+
+Run ./deployment.sh in the repository that has .tf files
+
+Note the outputs i.e. OutputDNS and repositoryURL
+
+Run ./update.sh with Application repository path(Path where Dockerfile of application is present) and repositoryURL
+
+Run OutputDNS in browser to access the application
+
